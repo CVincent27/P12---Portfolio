@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Projet 1",
+        "description": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
+        "skills": ["fab fa-html5", "fab fa-css3-alt"]
+    },
+    {
+        "title": "Projet 2",
+        "description": "Améliorez l'interface d'un site mobile avec des animations CSS",
+        "skills": ["fab fa-sass"]
+    },
+    {
+        "title": "Projet 3",
+        "description": "Créez une page web dynamique avec JavaScript",
+        "skills": ["fab fa-square-js"]
+    }
+]
