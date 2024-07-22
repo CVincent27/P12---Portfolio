@@ -16,13 +16,12 @@ header {
 
 header h1 {
     margin: 0;
-    flex: 1;
     text-align: center;
 }
 
 .social-icons {
     position: absolute;
-    right: 40px;
+    right: 20px;
 }
 
 .social-icons a {
@@ -33,20 +32,59 @@ header h1 {
 }
 
 .social-icons a:hover {
-    color: #0073e6; 
+    color: #0073e6;
 }
 
 main {
     padding: 2em;
 }
 
-/* #presentation {
-
-} */
-
-/* #skills {
-
-} */
 .all_skills {
-    font-size: 48px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 38px;
+}
+
+/* #project {
+
+} */
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+.project h3 {
+    margin: 0 0 10px;
+}
+
+.project p {
+    margin: 0 0 10px;
+}
+
+.skills {
+    margin-top: 10px;
+}
+
+.skills i {
+    margin-right: 10px;
+    font-size: 20px;
+    background: white;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
