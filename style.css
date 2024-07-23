@@ -1,90 +1,77 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
     background-color: #333;
     color: #fff;
-    padding: 1em 0;
-}
-
-header h1 {
-    margin: 0;
+    padding: 20px;
     text-align: center;
 }
 
-.social-icons {
-    position: absolute;
-    right: 20px;
-}
-
 .social-icons a {
-    color: white;
-    font-size: 24px;
-    margin-left: 10px;
+    color: #fff;
+    margin: 0 10px;
     text-decoration: none;
-}
-
-.social-icons a:hover {
-    color: #0073e6;
+    font-size: 1.5em;
 }
 
 main {
-    padding: 2em;
+    padding: 20px;
 }
 
-.all_skills {
+#presentation, #skills, #project {
+    margin-bottom: 40px;
+}
+
+#project .projects-list {
     display: flex;
-    gap: 10px;
     flex-wrap: wrap;
-    font-size: 38px;
-}
-
-/* #project {
-
-} */
-
-.projects-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 15px;
+    justify-content: center;
 }
 
 .project {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: 45%;
+    max-width: 600px;
+    min-width: 300px;
+    height: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    flex-grow: 1;
 }
 
-.project:hover {
-    transform: translateY(-10px);
-}
-
-.project h3 {
-    margin: 0 0 10px;
-}
-
-.project p {
-    margin: 0 0 10px;
+.project-img {
+    max-width: 100%;
+    height: 165px;
+    object-fit: cover;
+    width: 100%;
 }
 
 .skills {
     margin-top: 10px;
+    font-size: 25px;
 }
 
-.skills i {
-    margin-right: 10px;
-    font-size: 20px;
-    background: white;
-    padding: 5px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+.github-link {
+    display: block;
+    margin-top: 10px;
+    color: #0366d6;
+    text-decoration: none;
+}
+
+.all_skills {
+    text-align: center;
+}
+
+.all_skills i {
+    font-size: 2em;
+    margin: 10px;
 }
