@@ -13,9 +13,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 const skills = project.skills.map(skill => `<i class="${skill}"></i>`).join(' ');
 
                 projectElement.innerHTML = `
+                    <a href="${project.github}" target="_blank">
+                        <img src="${project.img}" alt="${project.title} image" class="project-img"/>
+                    </a>
                     <h3>${project.title}</h3>
                     <p>${project.description}</p>
                     <div class="skills">${skills}</div>
+                    <a href="${project.github}" class="github-link" target="_blank">Voir sur GitHub</a>
                 `;
                 projectsList.appendChild(projectElement);
             });
