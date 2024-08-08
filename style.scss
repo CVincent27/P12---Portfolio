@@ -1,7 +1,6 @@
 $color_1: #fff;
-$color_2: #0366d6;
 $font-family_1: Arial, sans-serif;
-$background-color_1: #333;
+$background-color_1: #2d2d35;
 
 body {
     font-family: $font-family_1;
@@ -79,7 +78,6 @@ main {
         .github-link {
             display: block;
             margin-top: 10px;
-            color: $color_2;
             text-decoration: none;
         }
     }
